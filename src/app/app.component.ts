@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-i18n-demo';
+  counter = 0;
+  getCounterText = () => $localize`:@@counterTextCode:Sheep Count: ${this.counter}`;
+
+  get language(): string {
+    return this._language;
+  }
+
+  set language(value: string) {
+    if (value !== this._language) {
+      localStorage.setItem('language', value);
+      window.location.reload();
+    }
+  }
+  private _language!: string;
+
+  date = new Date();
+
+  constructor() {
+    this._language = localStorage.getItem('language') ?? 'en-US';
+  }
+
+  updateLanguage(event: Event) {
+    // @ts-ignore
+    this.language = event.target.value;
+  }
 }
