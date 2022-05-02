@@ -3,7 +3,7 @@
 </div>
 <div>
   <input i18n-title="@@SheepCounter" title="Sheep counter" type="number" min="0" [(ngModel)]="counter">
-  <span i18n="@@icuText">There {counter, plural, =0 {is no sheep} one {is one sheep} other {are {{counter}} sheep}}</span>
+  <span i18n="@@icuText">There {counter, plural, =0 {are no sheep} one {is one sheep} other {are {{counter}} sheep}}</span>
 </div>
 <div>
   <span [innerHTML]="getCounterText()"></span>

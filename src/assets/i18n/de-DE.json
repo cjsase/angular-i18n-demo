@@ -4,7 +4,7 @@
     "welcomeText": "Willkommen",
     "SheepCounter": "Schafe Zähler",
     "icuText": "Es {$ICU} da",
-    "6121121458464064094": "{VAR_PLURAL, plural, =0 {sind keine Schafe} one {ist ein Schaf} other {sind {INTERPOLATION} Schafe}}",
+    "3509770640954904780": "{VAR_PLURAL, plural, =0 {sind keine Schafe} one {ist ein Schaf} other {sind {INTERPOLATION} Schafe}}",
     "LanguageEn": "Englisch",
     "LanguageDe": "Deutsch",
     "counterTextCode": "Schafe Zähler: {$PH}"
